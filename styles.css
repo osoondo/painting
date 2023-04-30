@@ -1,68 +1,90 @@
+body {
+    background-color: rgb(255, 133, 45);
+    margin: 48px;
+    max-width: 1400px;
+    height: 100%;
+}
+
 h1 
 {
+    display: flex;
+    flex-direction: row;
     font-family: monospace;
-    font-size: 64px;
-    text-align: center;
-    padding-top: 48px;
-    margin: 16px;
+    font-size: 32px;
+    text-align: left;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    line-height: 130%;
     font-weight: 800;
+    margin-left: 16px;
+    color: #232323;
 }
 
 h2 {
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 24px;
-    margin: auto;
-    text-align: center;
-
+    margin: 16px;
+    text-align: left;
+    color: #232323e0;
+    line-height: 130%;
 }
+
+/* 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 16px;
+    color: #232323;
+}
+*/
 
 .canvas {
     position: relative;
-    width: 1200px;
-    height: 600px;
+    width: 600px;
+    height: 750px;
     left: 224px;
     top: 64px;
-    background-color: #f7d6b6;
+    background-color: #f4e0cc;
     display: flex;
     flex-direction: column;
-    border: solid #232323 24px;
-    transform: skew(8deg);
-    
+    border: solid #232323 8px;
+    transform: skew(8deg); 
+    border-radius: 12px;
+    margin-bottom: 128px;
 }
 
 .top {
-    position: sticky;
-    width: 1100px;
-    height: 500px;
-    left: 64px;
-    top: 56px;
-    background-color: #75eaf0;
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 2px;
+    top: 4px;
+    background-color: #132E3D;
     margin: 24px;
     border-radius: 4px;
-    border: solid #232323 16px;
+    border: solid #232323 4px;
 }
 
 .sun {
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     left: 150px;
     top: 80px;
-    border-radius: 600px;
-    background-color: rgba(243, 85, 32, 0.69);
+    border-radius: 400px;
+    background-color: #141A25;
     margin: 12px;
-    filter:saturate(2);
-    border: solid #232323 16px;
 }
 
 .cloud {
     position: absolute;
-    width: 400px;
-    height: 84px;
+    width: 200px;
+    height: 56px;
     top: 300px;
-    left: 24px;
-    background-color: rgba(249, 247, 220, 0.659);
+    left: 48px;
+    background-color: #92bbc7c9;
     margin: 16px;
     border-radius: 200px;
     filter: blur(2px);
@@ -72,29 +94,20 @@ h2 {
 
 .cloud_two {
     position: absolute;
-    width: 350px;
-    height: 84px;
-    top: 400px;
-    left: 450px;
-    background-color: rgba(233, 231, 205, 0.766);
+    width: 340px;
+    height: 100px;
+    top: 250px;
+    left: 175px;
+    background-color: #29657fa9;
     margin: 4px;
     border-radius: 200px;
     filter: blur(2px);
-    margin: 40px;
-    padding: 32px;
 
 }
 
-/*grass
-.grass {
-        position: absolute;
-        width: 600px;
-        height: 200px;
-        left: 64px;
-        top: 600px;
-        margin: 44px;
-        background-color: #2aa77dd8;
-        border-radius: 4px;
-        border: solid #232323 16px;
+.container {
+    width: 400px;
+    padding-right: 48px;
+    float: right;
+    padding-top: 128px;
 }
-/*
